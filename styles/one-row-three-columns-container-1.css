@@ -13,9 +13,14 @@
 .column {
   min-width: 30rem;
   text-align: center;
+  padding: 1rem;
 }
 .column i {
   font-size: 4.5rem;
+}
+.column h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 .column p {
   font-size: 1.6rem;
