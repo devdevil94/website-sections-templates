@@ -1,0 +1,8 @@
+.multistep-form {
+  width: 34rem;
+  height: 34rem;
+  /* border: 2px solid #eee; */
+  background-color: white;
+}
+.multistep-form .step {
+}
