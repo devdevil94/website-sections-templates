@@ -1,8 +1,26 @@
+section {
+  height: 100vh;
+}
 .multistep-form {
-  width: 34rem;
-  height: 34rem;
-  /* border: 2px solid #eee; */
+  min-width: 34rem;
+  min-height: 34rem;
+  padding: 1.5rem;
+  border: 2px solid #eee;
   background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.multistep-form .progress-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 1.5rem;
 }
 .multistep-form .step {
+  display: none;
+}
+
+.multistep-form .step.active {
+  display: block;
 }
