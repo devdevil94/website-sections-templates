@@ -8,6 +8,30 @@ html {
   height: 100%;
   font-size: 10px;
 }
+body {
+  background-color: whitesmoke;
+}
+
+div,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 .container {
   padding: 0 1.5rem;
   margin: 0 auto;
