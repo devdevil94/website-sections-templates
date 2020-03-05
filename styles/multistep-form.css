@@ -2,7 +2,7 @@ section {
   height: 100vh;
 }
 .multistep-form {
-  min-width: 34rem;
+  max-width: 34rem;
   min-height: 34rem;
   padding: 1.5rem;
   border: 2px solid #eee;
@@ -20,7 +20,23 @@ section {
 .multistep-form .step {
   display: none;
 }
-
 .multistep-form .step.active {
   display: block;
 }
+.multistep-form .step .step-header {
+  text-align: center;
+  margin: 1rem 0;
+}
+.multistep-form .step-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.multistep-form .next-btn,
+.multistep-form .back-btn {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: darkgray;
+}
+/* .multistep-form .step:nth-child(2) {
+  background-color: aqua;
+} */
