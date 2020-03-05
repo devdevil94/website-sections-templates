@@ -12,12 +12,9 @@ const back = () => {
 };
 
 const update = () => {
-  steps.forEach(step =>
-    {
-        if(step.classlist.contains("active")) 
-        step.classlist.remove("active")
-    }
-  );
+  steps.forEach(step => {
+    if (step.classlist.contains("active")) step.classlist.remove("active");
+  });
   const currentStep = steps[stepNum - 1];
   currentStep.classlist.add("active");
 };
