@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/multistep-form.css" />
     <title>Multistep Form</title>
   </head>
-  <body></body>
+  <body>
+    <section class="relative">
+      <form class="multistep-form rounded absolute">
+        <ul class="progress-bar">
+          <li class="active">
+            Account
+          </li>
+          <li>Social</li>
+          <li>Personal</li>
+        </ul>
+        <div class="step active">Account Setup</div>
+        <div class="step">Social Profiles</div>
+        <div class="step">Personal Details</div>
+      </form>
+    </section>
+  </body>
 </html>
