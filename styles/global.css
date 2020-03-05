@@ -23,6 +23,11 @@ h5,
 h6 {
   font-size: 1.6rem;
 }
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .rounded {
   border-radius: 0.5rem;
 }
