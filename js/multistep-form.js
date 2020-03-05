@@ -1,5 +1,9 @@
 let stepNum = 1;
-let steps;
+
+const nextBtn = document.getElementsByClassName("next-btn")[0];
+const backBtn = document.getElementsByClassName("back-btn")[0];
+
+const steps = document.querySelectorAll(".multistep-form .step");
 
 const next = () => {
   if (stepNum === 3) return;
@@ -13,16 +17,11 @@ const back = () => {
 
 const update = () => {
   steps.forEach(step => {
-    if (step.classlist.contains("active")) step.classlist.remove("active");
+    if (step.classList.contains("active")) step.classList.remove("active");
   });
   const currentStep = steps[stepNum - 1];
-  currentStep.classlist.add("active");
+  currentStep.classList.add("active");
 };
-
-const nextBtn = document.getElementsByClassName("next-btn")[0];
-const backBtn = document.getElementsByClassName("back-btn")[0];
-
-steps = document.querySelectorAll(".multistep-form .step");
 
 nextBtn.addEventListener("click", () => {
   next();
