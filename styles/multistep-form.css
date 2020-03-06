@@ -11,12 +11,6 @@ section {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.multistep-form .progress-bar {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin-bottom: 1.5rem;
-}
 .multistep-form .step {
   display: none;
 }
@@ -31,12 +25,26 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+/*-------------Form Buttons-------------*/
 .multistep-form .next-btn,
-.multistep-form .back-btn {
+.multistep-form .back-btn,
+.multistep-form .submit-btn {
   padding: 1rem 1.5rem;
   color: #fff;
   background-color: darkgray;
 }
-/* .multistep-form .step:nth-child(2) {
-  background-color: aqua;
-} */
+.multistep-form .back-btn,
+.multistep-form .submit-btn {
+  display: none;
+}
+/*-------------Progress Bar-------------*/
+.multistep-form .progress-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.multistep-form .progress-bar li.active {
+  color: #be0808;
+}
