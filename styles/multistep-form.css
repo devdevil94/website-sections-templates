@@ -23,7 +23,7 @@ section {
 }
 .multistep-form .step-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 /*-------------Form Buttons-------------*/
