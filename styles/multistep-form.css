@@ -23,7 +23,7 @@ section {
 }
 .multistep-form .step-footer {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 /*-------------Form Buttons-------------*/
@@ -46,5 +46,5 @@ section {
   margin-bottom: 1.5rem;
 }
 .multistep-form .progress-bar li.active {
-  color: #be0808;
+  color: #be0809;
 }
