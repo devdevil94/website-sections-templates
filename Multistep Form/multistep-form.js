@@ -7,7 +7,7 @@ const nextBtn = document.getElementsByClassName("next-btn")[0];
 const backBtn = document.getElementsByClassName("back-btn")[0];
 const submitBtn = document.getElementsByClassName("submit-btn")[0];
 
-const steps = document.querySelectorAll(".multistep-form .step");
+const steps = document.querySelectorAll(".multistep-form .form-step");
 const progressDots = document.querySelectorAll(".progress-bar li");
 
 const next = () => {
