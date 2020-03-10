@@ -2,22 +2,26 @@ section {
   height: 100vh;
 }
 .multistep-form {
+  min-width: 34rem;
   max-width: 34rem;
   min-height: 34rem;
-  padding: 1.5rem;
-  border: 2px solid #eee;
-  background-color: white;
+  padding: 1rem 1.5rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.multistep-form .step {
+.multistep-form .form-steps {
+  border: 2px solid #eee;
+  background-color: white;
+  padding: 1.5rem;
+}
+.multistep-form .form-step{
   display: none;
 }
-.multistep-form .step.active {
+.multistep-form .form-step.active {
   display: block;
 }
-.multistep-form .step .step-header {
+.multistep-form .form-step .step-header {
   text-align: center;
   margin: 1rem 0;
 }
@@ -44,6 +48,26 @@ section {
   justify-content: space-between;
   list-style: none;
   margin-bottom: 1.5rem;
+  counter-reset: step;
+}
+.multistep-form .progress-bar li{
+  position: relative;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.multistep-form .progress-bar li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 2rem;
+  display: block;
+  margin: 0 auto;
+  line-height: 2rem;
+  padding: 2px;
+  margin-bottom: 3px;
+}
+.multistep-form .progress-bar li.active::before{
+  background-color: #be0809;
+  color: white;
 }
 .multistep-form .progress-bar li.active {
   color: #be0809;
