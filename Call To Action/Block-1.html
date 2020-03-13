@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <style>
+      section {
+        background-color: white;
+      }
+      .column {
+        min-width: 30rem;
+        text-align: center;
+        padding: 1rem;
+      }
+      .column img {
+        width: 100%;
+      }
+      .column h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .column p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #696969;
+      }
+      .column button {
+        background-color: #6c63ff;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.3rem;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin: 0.8rem 0;
+      }
 
+      @media (min-width: 768px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+      @media (min-width: 992px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+      @media (min-width: 1200px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+    </style>
     <title>Call To Action 1</title>
   </head>
   <body>
