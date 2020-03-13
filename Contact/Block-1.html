@@ -20,22 +20,68 @@
       }
       .contact-container h2 {
         font-size: 4.5rem;
+        margin-bottom: 1.5rem;
+        color: #2d2d2d;
+      }
+      .contact-container-inner {
+        max-width: 60rem;
+        margin: 0 auto;
+      }
+      .contact-container-inner p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #696969;
+      }
+      .contact-container-inner input,
+      .contact-container-inner textarea {
+        padding: 0.5rem;
+        border: 1px solid #696969;
+        border-radius: 0.3rem;
+      }
+      .contact-container-inner .inline-fields {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+      .contact-container-inner input[name="name"],
+      .contact-container-inner input[name="email"] {
+        width: 29rem;
+      }
+      .contact-container-inner input[name="subject"] {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      .contact-container-inner textarea[name="message"] {
+        width: 100%;
+        resize: none;
+        margin-bottom: 2rem;
+      }
+      .contact-container-inner button {
+        background-color: #6c63ff;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.3rem;
       }
     </style>
     <title>Contact 1</title>
   </head>
   <body>
     <section>
-      <div class="container">
-        <div class="contact-container">
+      <div class="container contact-container">
+        <div class="contact-container-inner">
           <h2>Contact Us</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint,
             veniam ipsa animi esse dolorum totam harum quis ratione quae!
           </p>
           <form>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="Email" />
+            <div class="inline-fields">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" rows="7" placeholder="Message"></textarea>
+            <button>Submit</button>
           </form>
         </div>
       </div>
