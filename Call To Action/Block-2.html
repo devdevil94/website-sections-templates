@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <style>
+      section {
+        background-color: white;
+        padding: 3rem 0;
+      }
+      section .title,
+      section .subtitle {
+        text-align: center;
+        color: #2d2d2d;
+        margin-bottom: 1.5rem;
+      }
+      section .title {
+        font-size: 4.5rem;
+      }
+      section .subtitle {
+        font-size: 3rem;
+      }
+      .flex-1 {
+        flex: 1;
+      }
+      .flex-2 {
+        flex: 2;
+      }
+      .column {
+        min-width: 30rem;
+        text-align: center;
+        padding: 1rem;
+      }
+      .column img {
+        width: 100%;
+      }
+      .column h3 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        color: #2d2d2d;
+      }
+      .column p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #696969;
+      }
+      .column button {
+        background-color: #6c63ff;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.3rem;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin: 0.8rem 0;
+      }
+
+      @media (min-width: 768px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+      @media (min-width: 992px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+      @media (min-width: 1200px) {
+        .row {
+          flex-direction: row;
+        }
+        .column {
+          text-align: left;
+        }
+      }
+    </style>
+    <title>Call To Action Block 2</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="title">Call To Action Block 2</h2>
+        <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur</h3>
+        <div class="row">
+          <div class="column flex-2">
+            <h3>Call To Action</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur, fugiat aliquid! Provident expedita, perferendis
+              maxime tenetur dolorum impedit ratione excepturi sapiente quod
+              unde facilis eius ad suscipit et mollitia.
+            </p>
+            <button>READ MORE</button>
+          </div>
+          <div class="column flex-1">
+            <img src="images/undraw_certification_aif8.svg" alt="Text image" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
