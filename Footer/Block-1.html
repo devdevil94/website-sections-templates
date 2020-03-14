@@ -13,7 +13,34 @@
         margin-bottom: 1rem;
         color: var(--primary-text-color);
       }
-      
+      footer ul > li {
+        margin-bottom: 0.5rem;
+      }
+      footer ul > li > a {
+        color: var(--primary-text-color);
+      }
+      footer ul > li > a:hover{
+        color: var(--primary-color);
+      }
+      footer .row {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin: 0.8rem 0;
+      }
+      footer .column {
+        flex: 1;
+        padding: 1rem;
+      }
+      footer .column.about p {
+        color: var(--secondary-text-color);
+        font-size: 1.5rem;
+      }
+      footer section#copyright{
+          text-align: center;
+          color: var(--secondary-text-color)
+      }
     </style>
     <title>Footer 1</title>
   </head>
