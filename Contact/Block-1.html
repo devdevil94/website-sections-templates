@@ -16,7 +16,6 @@
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
           0 1px 2px 0 rgba(0, 0, 0, 0.06);
         padding: 5rem 0;
-        /* max-width: 56rem; */
       }
       .contact-container h2 {
         font-size: 4.5rem;
@@ -26,6 +25,7 @@
       .contact-container-inner {
         max-width: 60rem;
         margin: 0 auto;
+        padding: 0 2rem;
       }
       .contact-container-inner p {
         font-size: 1.8rem;
@@ -41,11 +41,15 @@
       .contact-container-inner .inline-fields {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         margin-bottom: 2rem;
       }
       .contact-container-inner input[name="name"],
       .contact-container-inner input[name="email"] {
-        width: 29rem;
+        width: 100%;
+      }
+      .contact-container-inner input[name="name"] {
+        margin-bottom: 2rem;
       }
       .contact-container-inner input[name="subject"] {
         width: 100%;
@@ -59,8 +63,55 @@
       .contact-container-inner button {
         background-color: #6c63ff;
         color: white;
-        padding: 1rem;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
         border-radius: 0.3rem;
+      }
+
+      @media (min-width: 768px) {
+        .contact-container-inner {
+          padding: 0 2rem;
+        }
+        .contact-container-inner .inline-fields {
+          flex-direction: column;
+        }
+        .contact-container-inner input[name="name"],
+        .contact-container-inner input[name="email"] {
+          width: 100%;
+        }
+        .contact-container-inner input[name="name"] {
+          margin-bottom: 2rem;
+        }
+      }
+      @media (min-width: 992px) {
+        .contact-container-inner {
+          padding: 0;
+        }
+        .contact-container-inner .inline-fields {
+          flex-direction: row;
+        }
+        .contact-container-inner input[name="name"],
+        .contact-container-inner input[name="email"] {
+          width: 29rem;
+        }
+        .contact-container-inner input[name="name"] {
+          margin-bottom: 0;
+        }
+      }
+      @media (min-width: 1200px) {
+        .contact-container-inner {
+          padding: 0;
+        }
+        .contact-container-inner .inline-fields {
+          flex-direction: row;
+        }
+        .contact-container-inner input[name="name"],
+        .contact-container-inner input[name="email"] {
+          width: 29rem;
+        }
+        .contact-container-inner input[name="name"] {
+          margin-bottom: 0;
+        }
       }
     </style>
     <title>Contact 1</title>
