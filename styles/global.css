@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Roboto&display=swap");
 
+/* ------------- THEME ------------- */
+:root {
+  --primary-color: #6c63ff;
+  --primary-text-color: #2d2d2d;
+  /* --secondary-text-color: #696969; */
+  --secondary-text-color: #a9a9a9;
+}
+
+/* ------------- REST ------------- */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +16,7 @@
   font-family: "Roboto";
   /* font-family: "Roboto Mono", monospace; */
 }
+
 body,
 html {
   height: 100%;
@@ -35,6 +45,12 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 .rounded {
   border-radius: 0.5rem;
