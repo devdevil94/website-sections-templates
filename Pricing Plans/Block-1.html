@@ -7,8 +7,54 @@
     <title>Pricing Plans 1</title>
     <style>
       section {
-        background-color: white;
         padding: 3rem 0;
+      }
+      #pricing-1 .container {
+        max-width: 97rem;
+      }
+      #pricing-1 h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      #pricing-1 .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      #pricing-1 .row .column {
+        width: 28rem;
+        text-align: center;
+        background-color: white;
+        padding: 3rem 1.2rem;
+      }
+      #pricing-1 .row .plan-box > div {
+        margin-bottom: 3rem;
+      }
+      #pricing-1 .row .plan-box .plan-box_title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      #pricing-1 .row .plan-box .plan-box_desc p {
+        font-size: 1.4rem;
+      }
+      #pricing-1 .row .plan-box .plan-box_price {
+        font-size: 3rem;
+      }
+      #pricing-1 .row .plan-box .plan-box_price span {
+        font-size: 1.4rem;
+      }
+      #pricing-1 .row .plan-box .plan-box_specs {
+        margin: 0.5rem 0 2rem 0;
+      }
+      #pricing-1 .row .plan-box .plan-box_specs li {
+        margin-bottom: 0.5rem;
+        color: var(--secondary-text-color);
+      }
+      #pricing-1 .row .plan-box button {
+        background-color: #6c63ff;
+        color: white;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
       }
     </style>
   </head>
@@ -31,8 +77,9 @@
               <li>$5 per exta user</li>
               <li>-</li>
             </ul>
+            <button class="rounded">Choose</button>
           </li>
-          <li class="column">
+          <li class="column plan-box">
             <div>
               <h2 class="plan-box_title">Advanced</h2>
               <div class="plan-box_desc">
@@ -46,8 +93,9 @@
               <li>$15 per exta user</li>
               <li>Unlimited support</li>
             </ul>
+            <button class="rounded">Choose</button>
           </li>
-          <li class="column">
+          <li class="column plan-box">
             <div>
               <h2 class="plan-box_title">Enterprise</h2>
               <div class="plan-box_desc">
@@ -61,6 +109,7 @@
               <li>$50 per exta user</li>
               <li>Unlimited support</li>
             </ul>
+            <button class="rounded">Choose</button>
           </li>
         </ul>
       </div>
