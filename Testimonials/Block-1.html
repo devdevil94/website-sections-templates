@@ -9,58 +9,88 @@
         background-color: white;
         padding: 3rem 0;
       }
-      #testimonial-1 > .container > h2 {
+      #testimonials-1 > .container > h2 {
         text-align: center;
         font-size: 4rem;
         margin-bottom: 2rem;
         color: var(--primary-text-color);
       }
-      #testimonial-1 p {
+      #testimonials-1 p {
         font-size: 1.8rem;
         line-height: 2.5rem;
       }
-      #testimonial-1 > .container > p {
+      #testimonials-1 > .container > p {
         text-align: center;
         max-width: 55rem;
         margin: 0 auto;
         margin-bottom: 3rem;
         color: var(--secondary-text-color);
       }
-      #testimonial-1 .row {
+      #testimonials-1 .row {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
       }
-      #testimonial-1 .column {
-        width: 30rem;
+      #testimonials-1 .column {
+        width: 100%;
         padding: 3rem;
+        margin-bottom: 2rem;
       }
-      #testimonial-1 .column .person-info {
+      #testimonials-1 .column .person-info {
         display: flex;
         margin-bottom: 1.5rem;
       }
-      #testimonial-1 .column .person-info img {
+      #testimonials-1 .column .person-info img {
         width: 6.5rem;
         height: 6.5rem;
         margin-right: 1.5rem;
       }
-      #testimonial-1 .column .person-info span h3.person-info_name {
+      #testimonials-1 .column .person-info span h3.person-info_name {
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
         color: var(--primary-text-color);
       }
-      #testimonial-1 .column .person-info span h4.person-info_occup {
+      #testimonials-1 .column .person-info span h4.person-info_occup {
         font-weight: normal;
         font-size: 1.5rem;
         color: var(--primary-color);
       }
-      #testimonial-1 .column p {
+      #testimonials-1 .column p {
         color: var(--secondary-text-color);
+      }
+
+      @media (min-width: 768px) {
+        #testimonials-1 .row {
+          flex-direction: column;
+        }
+        #testimonials-1 .column {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+      @media (min-width: 992px) {
+        #testimonials-1 .row {
+          flex-direction: row;
+        }
+        #testimonials-1 .column {
+          width: 30rem;
+          margin-bottom: 0;
+        }
+      }
+      @media (min-width: 1200px) {
+        #testimonials-1 .row {
+          flex-direction: row;
+        }
+        #testimonials-1 .column {
+          width: 30rem;
+          margin-bottom: 0;
+        }
       }
     </style>
     <title>Testimonials 1</title>
   </head>
   <body>
-    <section id="testimonial-1">
+    <section id="testimonials-1">
       <div class="container">
         <h2>Testimonials</h2>
         <p>
