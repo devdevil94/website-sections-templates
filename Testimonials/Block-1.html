@@ -4,32 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <style>
+      section {
+        background-color: white;
+        padding: 3rem 0;
+      }
+      #testimonial-1 > .container > h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        color: var(--primary-text-color);
+      }
+      #testimonial-1 > .container > p {
+        text-align: center;
+        max-width: 55rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        color: var(--secondary-text-color);
+      }
+      #testimonial-1 .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      #testimonial-1 .column {
+        width: 30rem;
+        padding: 3rem;
+      }
+      #testimonial-1 .column .person-info {
+        display: flex;
+        margin-bottom: 1.5rem;
+      }
+      #testimonial-1 .column .person-info img {
+        width: 6.5rem;
+        height: 6.5rem;
+        margin-right: 1.5rem;
+      }
+      #testimonial-1 .column .person-info span h3.person-info_name {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary-text-color);
+      }
+      #testimonial-1 .column .person-info span h4.person-info_occup {
+        font-weight: normal;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+      }
+      #testimonial-1 .column p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: var(--secondary-text-color);
+      }
+    </style>
     <title>Testimonials 1</title>
   </head>
   <body>
-    <section>
+    <section id="testimonial-1">
       <div class="container">
+        <h2>Testimonials</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+          quidem minima architecto alias amet cupiditate saepe veniam
+          laboriosam, dignissimos iusto
+        </p>
         <div class="row">
-          <div class="column">
-            <div>
+          <div class="column float rounded">
+            <div class="person-info">
               <img
                 src="../images/adult-attractive-beautiful-beauty-415829.jpg"
                 alt="Testimonial 1"
+                class="rounded-full"
               />
-              <span class="person-info">
-                <h3>John Doe</h3>
-                <h4><em>Founder</em></h4>
+              <span>
+                <h3 class="person-info_name">Jina Doe</h3>
+                <h4 class="person-info_occup"><em>Founder</em></h4>
               </span>
             </div>
 
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               quidem minima architecto alias amet cupiditate saepe veniam
-              laboriosam, dignissimos iusto!
+              laboriosam, dignissimos iusto!"
             </p>
           </div>
-          <div class="column"></div>
-          <div class="column"></div>
+          <div class="column float rounded">
+            <div class="person-info">
+              <img
+                src="../images/face-facial-hair-fine-looking-guy-614810.jpg"
+                alt="Testimonial 1"
+                class="rounded-full"
+              />
+              <span>
+                <h3 class="person-info_name">John Doe</h3>
+                <h4 class="person-info_occup"><em>Founder</em></h4>
+              </span>
+            </div>
+
+            <p>
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              quidem minima architecto alias amet cupiditate saepe veniam
+              laboriosam, dignissimos iusto!"
+            </p>
+          </div>
+          <div class="column float rounded">
+            <div class="person-info">
+              <img
+                src="../images/woman-wearing-coat-762020.jpg"
+                alt="Testimonial 1"
+                class="rounded-full"
+              />
+              <span>
+                <h3 class="person-info_name">Mira Smith</h3>
+                <h4 class="person-info_occup"><em>Founder</em></h4>
+              </span>
+            </div>
+
+            <p>
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+              quidem minima architecto alias amet cupiditate saepe veniam
+              laboriosam, dignissimos iusto!"
+            </p>
+          </div>
         </div>
       </div>
     </section>
