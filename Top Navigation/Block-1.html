@@ -84,11 +84,11 @@
   <body>
     <header>
       <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
+        <span class="navbar-toggle">
           <i class="material-icons">menu</i>
         </span>
-        <a href="#!" class="brand">brand</a>
-        <ul class="nav-links" id="js-menu">
+        <a href="#!" class="brand">LOGO</a>
+        <ul class="nav-links">
           <li>
             <a href="#!" class="nav-link">Home</a>
           </li>
@@ -109,11 +109,11 @@
     </header>
 
     <script>
-      let mainNav = document.getElementById("js-menu");
-      let navBarToggle = document.getElementById("js-navbar-toggle");
+      const navLinks = document.getElementsByClassName("nav-links")[0];
+      const navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
 
-      navBarToggle.addEventListener("click", function() {
-        mainNav.classList.toggle("active");
+      navbarToggle.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>
