@@ -99,6 +99,13 @@ a {
   max-width: 100%;
   height: auto;
 }
+
+.separator {
+  width: 5rem;
+  height: 0.4rem;
+  margin: 4rem auto;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
   .container {
