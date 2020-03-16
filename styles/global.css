@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Material+Icons|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik|Material+Icons|Roboto&display=swap");
 
 /* ------------- THEME ------------- */
 :root {
   --primary-color: #6c63ff;
   --primary-text-color: #2d2d2d;
+  /* --primary-text-color: #3e3e54; */
   /* --secondary-text-color: #696969; */
-  --secondary-text-color: #a9a9a9;
+  --secondary-text-color: #58647b;
+  /* --secondary-text-color: #a9a9a9; */
 }
 
 /* ------------- DEFAULT ------------- */
@@ -13,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Rubik", sans-serif; */
   font-family: "Roboto";
   /* font-family: "Roboto Mono", monospace; */
 }
@@ -60,16 +63,19 @@ a {
 .rounded-full {
   border-radius: 50%;
 }
+
 .relative {
   position: relative;
 }
 .absolute {
   position: absolute;
 }
+
 .container {
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+
 .float {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -77,11 +83,21 @@ a {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
 .flex-1 {
-  flex: 1;
+  flex: 1 0 auto;
 }
 .flex-2 {
   flex: 2;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
