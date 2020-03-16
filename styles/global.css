@@ -106,6 +106,18 @@ a {
   margin: 4rem auto;
 }
 
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-text-color);
+}
+.text-secondary {
+  color: var(--secondary-text-color);
+}
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
   .container {
