@@ -4,6 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <style>
+      section {
+        background-color: white;
+        padding: 5rem 0;
+      }
+      #hero-2 {
+        min-height: 100vh;
+      }
+      #hero-2 h1,
+      #hero-2 h2,
+      #hero-2 p {
+        margin-bottom: 2rem;
+      }
+      #hero-2 h1 {
+        font-size: 4.5rem;
+      }
+      #hero-2 h2 {
+        font-size: 3rem;
+      }
+      #hero-2 p {
+        font-size: 2rem;
+      }
+      #hero-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #hero-2 .row .column:nth-child(1) {
+        padding: 2rem 0;
+        margin-bottom: 3rem;
+        /* text-align: center; */
+        /* width: 50rem; */
+        /* height: 50rem; */
+      }
+      #hero-2 .row .column .call-to-action button {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        width: 16.2rem;
+      }
+      #hero-2 .row .column .call-to-action button:nth-child(1) {
+        margin-right: 2rem;
+        background-color: var(--primary-color);
+        color: white;
+        margin-bottom: 2rem;
+      }
+      #hero-2 .row .column .call-to-action button:nth-child(2) {
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+      }
+    </style>
     <title>Hero 2</title>
   </head>
   <body>
@@ -11,17 +62,22 @@
       <div class="container">
         <div class="row">
           <div class="column">
-            <h1>Website Title</h1>
-            <h2>Website Subtitle Here</h2>
+            <h1 class="uppercase">Some title here</h1>
+            <h2 class="uppercase">Some subtitle here</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et sed
-              illum, earum fugit aliquam corrupti?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab
+              magni exercitationem nam ex blanditiis dicta.
             </p>
+            <div class="call-to-action">
+              <button class="uppercase rounded">Purchase Now</button>
+              <button class="uppercase rounded">Read More</button>
+            </div>
           </div>
           <div class="column">
             <img
-              src="../images/illustrations/undraw_walking_outside_5ueb.svg"
+              src="../images/illustrations/undraw_build_wireframe_u9m2.svg"
               alt="Test Image"
+              class="responsive"
             />
           </div>
         </div>
