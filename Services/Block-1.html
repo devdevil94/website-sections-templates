@@ -6,80 +6,105 @@
 
     <link rel="stylesheet" href="../styles/global.css" />
     <style>
-      .inner h1 {
-        text-align: center;
-        font-size: 3rem;
-        margin: 2rem 0;
+      section {
+        padding: 8rem 0;
+        background-color: white;
       }
-      .row {
+      #services-1 > .container > h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+      #services-1 > .container > p {
+        text-align: center;
+        max-width: 55rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+      }
+      #services-1 .row {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 0.5rem;
         margin: 0.8rem 0;
       }
-      .column {
-        min-width: 30rem;
+      #services-1 .row .column {
+        width: 100%;
         text-align: center;
-        padding: 1rem;
+        padding: 2rem 1rem;
       }
-      .column i {
+      #services-1 .row .column i {
         font-size: 4.5rem;
       }
-      .column h2 {
+      #services-1 .row .column h2 {
         font-size: 2rem;
         margin: 1rem 0;
       }
-      .column p {
+      #services-1 .row .column p {
         font-size: 1.6rem;
         margin: 1.3rem 0;
       }
 
       @media (min-width: 768px) {
-        .row {
+        #services-1 .row {
           flex-direction: column;
+        }
+        #services-1 .row .column {
+          width: 100%;
         }
       }
       @media (min-width: 992px) {
-        .row {
+        #services-1 .row {
           flex-direction: row;
+        }
+        #services-1 .row .column {
+          width: 30rem;
         }
       }
       @media (min-width: 1200px) {
-        .row {
+        #services-1 .row {
           flex-direction: row;
+        }
+        #services-1 .row .column {
+          width: 30rem;
         }
       }
     </style>
-    <title>One Row Three Columns Container 1</title>
+    <title>Services 1</title>
   </head>
   <body>
     <section id="services-1">
       <div class="container">
-        <h1>Our Services</h1>
+        <h1 class="uppercase text-dark">What do we do</h1>
+        <p class="text-grey">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quo
+          excepturi, exercitationem in enim laborum illo, atque, deserunt rerum
+          labore dolorem error saepe ipsam ut?
+        </p>
+        <div class="separator bg-primary"></div>
         <div class="row">
-          <div class="column">
-            <i class="material-icons">filter_1</i>
-            <h2>Lorem Ipsum</h2>
-            <p>
+          <div class="column float rounded">
+            <i class="material-icons text-secondary">edit</i>
+            <h2 class="text-dark">Lorem Ipsum</h2>
+            <p class="text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
               natus assumenda excepturi ut necessitatibus blanditiis impedit
               corrupti
             </p>
           </div>
-          <div class="column">
-            <i class="material-icons">filter_2</i>
-            <h2>Lorem Ipsum</h2>
-            <p>
+          <div class="column float rounded">
+            <i class="material-icons text-secondary">link</i>
+            <h2 class="text-dark">Lorem Ipsum</h2>
+            <p class="text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
               natus assumenda excepturi ut necessitatibus blanditiis impedit
               corrupti
             </p>
           </div>
-          <div class="column">
-            <i class="material-icons">filter_3</i>
-            <h2>Lorem Ipsum</h2>
-            <p>
+          <div class="column float rounded">
+            <i class="material-icons text-secondary">alarm</i>
+            <h2 class="text-dark">Lorem Ipsum</h2>
+            <p class="text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
               natus assumenda excepturi ut necessitatibus blanditiis impedit
               corrupti
