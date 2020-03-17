@@ -3,10 +3,12 @@
 /* ------------- THEME ------------- */
 :root {
   --primary-color: #6c63ff;
+  --secondary-color: #ffbb00;
   --primary-text-color: #2d2d2d;
+  --secondary-text-color: #58647b;
+  --grey-text-color: #58647b;
   /* --primary-text-color: #3e3e54; */
   /* --secondary-text-color: #696969; */
-  --secondary-text-color: #58647b;
   /* --secondary-text-color: #a9a9a9; */
 }
 
@@ -105,19 +107,41 @@ a {
   height: 0.4rem;
   margin: 4rem auto;
 }
+.separator-left {
+  width: 5rem;
+  height: 0.4rem;
+  /* margin: 4rem auto; */
+}
 
 .bg-primary {
   background-color: var(--primary-color);
 }
 .bg-secondary {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .text-primary {
-  color: var(--primary-text-color);
+  color: var(--primary-color);
 }
 .text-secondary {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
+.text-grey {
+  color: var(--grey-text-color);
+}
+.text-dark {
+  color: var(--primary-text-color);
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+.w-1\/3 {
+  width: 33.33%;
+}
+.w-2\/3 {
+  width: 66.67%;
+}
+
 /* ------------- MEDIA QUERIES ------------- */
 @media (min-width: 768px) {
   .container {
