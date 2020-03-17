@@ -9,37 +9,32 @@
         background-color: white;
         padding: 3rem 0;
       }
-      .flex-1 {
-        flex: 1;
-      }
-      .flex-2 {
-        flex: 2;
-      }
-      .column {
+
+      #call-to-action-1 .row .column {
         min-width: 30rem;
         text-align: center;
         padding: 1rem;
       }
-      .column img {
+      #call-to-action-1 .row .column img {
         width: 100%;
       }
-      .column h2 {
+      #call-to-action-1 .row .column h2 {
         font-size: 3.5rem;
         margin-bottom: 1.5rem;
         color: #2d2d2d;
       }
-      .column p {
+      #call-to-action-1 .row .column p {
         font-size: 1.8rem;
         line-height: 2.5rem;
         color: #696969;
       }
-      .column button {
+      #call-to-action-1 .row .column button {
         background-color: #6c63ff;
         color: white;
         padding: 1rem;
         border-radius: 0.3rem;
       }
-      .row {
+      #call-to-action-1 .row {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,26 +43,26 @@
       }
 
       @media (min-width: 768px) {
-        .row {
+        #call-to-action-1 .row {
           flex-direction: row;
         }
-        .column {
+        #call-to-action-1 .row .column {
           text-align: left;
         }
       }
       @media (min-width: 992px) {
-        .row {
+        #call-to-action-1 .row {
           flex-direction: row;
         }
-        .column {
+        #call-to-action-1 .row .column {
           text-align: left;
         }
       }
       @media (min-width: 1200px) {
-        .row {
+        #call-to-action-1 .row {
           flex-direction: row;
         }
-        .column {
+        #call-to-action-1 .row .column {
           text-align: left;
         }
       }
@@ -75,7 +70,7 @@
     <title>Call To Action 1</title>
   </head>
   <body>
-    <section>
+    <section id="call-to-action-1">
       <div class="container">
         <div class="row">
           <div class="column flex-1">
