@@ -16,8 +16,8 @@
       }
       #newsletter-1 h1 {
         font-size: 4.5rem;
-        margin: 0 auto 2rem auto;
-        width: fit-content;
+        text-align: center;
+        margin-bottom: 2rem;
       }
       #newsletter-1 .content p {
         font-size: 1.8rem;
@@ -26,16 +26,45 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 3rem;
+        flex-direction: column;
       }
       #newsletter-1 .content form button {
         font-size: 1.6rem;
         padding: 1rem 2rem;
         color: white;
         border: 1px solid var(--primary-color);
-        width: 35%;
+        width: 100%;
       }
       #newsletter-1 .content form input {
-        width: 60%;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        #newsletter-1 .content form {
+          flex-direction: column;
+        }
+        #newsletter-1 .content form button,
+        #newsletter-1 .content form input {
+          width: 100%;
+        }
+        #newsletter-1 .content form input {
+          margin-bottom: 2rem;
+        }
+      }
+      @media (min-width: 992px) {
+        #newsletter-1 .content form {
+          flex-direction: row;
+        }
+        #newsletter-1 .content form button {
+          width: 35%;
+        }
+        #newsletter-1 .content form input {
+          width: 60%;
+        }
+        #newsletter-1 .content form input {
+          margin-bottom: 0;
+        }
       }
     </style>
     <title>Newsletter Form 1</title>
@@ -51,7 +80,11 @@
           </p>
           <div class="separator bg-primary"></div>
           <form>
-            <input type="text" class="text-field rounded" />
+            <input
+              type="email"
+              class="text-field rounded"
+              placeholder="Email"
+            />
             <button type="submit" class="bg-primary rounded">
               Subscribe
             </button>
