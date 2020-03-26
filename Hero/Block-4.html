@@ -14,7 +14,7 @@
             rgba(0, 0, 0, 0.5)
           ),
           url("../images/photo-of-people-doing-handshakes-3183197.jpg");
-        height: 40rem;
+        height: 100vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -55,6 +55,12 @@
       #hero-4 .hero-content button:hover {
         background-color: white;
         color: var(--primary-color);
+      }
+
+      @media screen and (min-width: 992px) {
+        #hero-4 {
+          height: 45rem;
+        }
       }
     </style>
     <title>Hero 4</title>
