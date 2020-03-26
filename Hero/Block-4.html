@@ -15,33 +15,42 @@
           ),
           url("../images/photo-of-people-doing-handshakes-3183197.jpg");
         height: 40rem;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
       }
+      #hero-4 .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #hero-4 h1 {
+        font-size: 7rem;
+        text-align: center;
+        color: white;
+      }
       #hero-4 .hero-content {
         text-align: center;
         color: white;
-        /* border: 1px solid white; */
-        padding: 2.5rem;
-        min-width: 28rem;
-      }
-      #hero-4 .hero-content h1 {
-        font-size: 5rem;
+        padding: 1rem;
+        max-width: 55rem;
+        margin: 0 auto;
       }
       #hero-4 .hero-content p {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin: 1rem 0 1.5rem 0;
       }
       #hero-4 .hero-content button {
-        border: 2px solid white;
-        padding: 0.75rem 1.5rem;
-        font-size: 2rem;
-        background: none;
+        border-radius: 10rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
         color: white;
         cursor: pointer;
         transition: all 0.4s;
+        margin-top: 1rem;
       }
       #hero-4 .hero-content button:hover {
         background-color: white;
@@ -52,10 +61,15 @@
   </head>
   <body>
     <section id="hero-4">
-      <div class="hero-content container-center">
-        <h1>I am Jane Alan</h1>
-        <p>And I'm a Photographer</p>
-        <button>Hire Me</button>
+      <div class="container">
+        <h1 class="uppercase">We Make awesome courses</h1>
+        <div class="hero-content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+            exercitationem eligendi voluptas.
+          </p>
+          <button class="bg-primary">LEARN NOW</button>
+        </div>
       </div>
     </section>
   </body>
