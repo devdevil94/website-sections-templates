@@ -12,14 +12,42 @@
       rel="stylesheet"
       href="../lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
+    <style>
+      section {
+        padding: 6rem 0;
+        /* background-color: #fff; */
+      }
+      #testimonials-2 {
+        /* height: 20rem; */
+      }
+      #testimonials-2 .container .owl-carousel .item {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      #testimonials-2 .container .owl-carousel .item .person-info img {
+        width: 6.5rem;
+        height: 6.5rem;
+        margin: 1rem auto;
+      }
+      #testimonials-2
+        .container
+        .owl-carousel
+        .item
+        .person-info
+        .person-info_occup {
+        font-weight: normal;
+      }
+    </style>
     <title>Testimonials 2</title>
   </head>
   <body>
     <section id="testimonials-2">
       <div class="container">
         <div class="owl-carousel owl-theme">
-          <div class="item">
-            <p>
+          <div class="item rounded bg-white float-md">
+            <p class="text-grey">
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               quidem minima architecto aliass"
             </p>
@@ -29,14 +57,14 @@
                 alt="Testimonial 1"
                 class="rounded"
               />
-              <span>
-                <h3 class="person-info_name">Jina Doe</h3>
-                <h4 class="person-info_occup"><em>Founder</em></h4>
-              </span>
+              <h2 class="person-info_name">Jina Doe</h2>
+              <h3 class="person-info_occup text-primary">
+                <em>Developer at Company</em>
+              </h3>
             </div>
           </div>
-          <div class="item">
-            <p>
+          <div class="item rounded bg-white float-md">
+            <p class="text-grey">
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               quidem minima architecto aliass"
             </p>
@@ -46,14 +74,14 @@
                 alt="Testimonial 2"
                 class="rounded"
               />
-              <span>
-                <h3 class="person-info_name">Jina Doe</h3>
-                <h4 class="person-info_occup"><em>Founder</em></h4>
-              </span>
+              <h2 class="person-info_name">Jina Doe</h2>
+              <h3 class="person-info_occup text-primary">
+                <em>Designer at Company</em>
+              </h3>
             </div>
           </div>
-          <div class="item">
-            <p>
+          <div class="item rounded bg-white float-md">
+            <p class="text-grey">
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
               quidem minima architecto aliass"
             </p>
@@ -63,10 +91,10 @@
                 alt="Testimonial 3"
                 class="rounded"
               />
-              <span>
-                <h3 class="person-info_name">Jina Doe</h3>
-                <h4 class="person-info_occup"><em>Founder</em></h4>
-              </span>
+              <h2 class="person-info_name">Jina Doe</h2>
+              <h3 class="person-info_occup text-primary">
+                <em>Founder of Company</em>
+              </h3>
             </div>
           </div>
         </div>
@@ -76,9 +104,11 @@
     <script src="../lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
       $(".owl-carousel").owlCarousel({
-        // loop: true,
-        margin: 10,
-        nav: true
+        items: 1,
+        loop: true,
+        autoHeight: true,
+        autoplay: true,
+        autoplayTimeout: 4000
       });
     </script>
   </body>
