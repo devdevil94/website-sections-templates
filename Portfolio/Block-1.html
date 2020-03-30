@@ -32,9 +32,21 @@
         height: 25rem;
         overflow: hidden;
         margin: 0 auto;
+        position: relative;
+      }
+      #portfolio-1 .projects-list .project .project-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
       }
       #portfolio-1 .projects-list .project a {
         display: block;
+        width: 100%;
+        height: 100%;
       }
       #portfolio-1 .projects-list .project img {
         /* width: 100%; */
@@ -46,33 +58,15 @@
       #portfolio-1 .projects-list .project:hover img {
         transform: scale(1);
       }
-
       .carousel-wrapper {
         position: relative;
       }
-      /* .owl-theme .owl-nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      } 
-    .owl-theme .owl-nav button span {
-        font-size: 3rem;
-        padding: 0.5rem 1rem;
-        display: flex;
-        align-items: center;
-      } */
       .owl-carousel .nav-btn {
-        /* padding: 1rem 0.5rem; */
         position: absolute;
         cursor: pointer;
         top: 100px !important;
         width: 5rem;
         height: 5rem;
-      }
-      .owl-carousel .nav-btn i {
       }
       .owl-carousel .prev-slide {
         left: 0;
@@ -94,6 +88,7 @@
       <div class="carousel-wrapper">
         <ul class="projects-list owl-carousel owl-theme">
           <li class="project item">
+            <div class="project-item"></div>
             <a href="#!">
               <img
                 src="../images/silver-and-black-camera-silver-and-black-laptop-blue-ceramic-574664.jpg"
@@ -183,7 +178,7 @@
             items: 4
           },
           1200: {
-            items: 4
+            items: 5
           }
         }
       });
