@@ -38,10 +38,29 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(108, 99, 255, 0.3);
         width: 100%;
         height: 100%;
         pointer-events: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.7s;
+        text-align: center;
+      }
+      #portfolio-1 .projects-list .project:hover .project-name {
+        visibility: visible;
+        opacity: 1;
+      }
+      #portfolio-1 .projects-list .project .project-name span {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        border-bottom: 3px solid white;
+        padding: 0.5rem;
       }
       #portfolio-1 .projects-list .project a {
         display: block;
@@ -88,7 +107,6 @@
       <div class="carousel-wrapper">
         <ul class="projects-list owl-carousel owl-theme">
           <li class="project item">
-            <div class="project-item"></div>
             <a href="#!">
               <img
                 src="../images/silver-and-black-camera-silver-and-black-laptop-blue-ceramic-574664.jpg"
@@ -97,6 +115,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 1</span>
+            </div>
           </li>
           <li class="project item">
             <a href="#!">
@@ -107,6 +128,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 2</span>
+            </div>
           </li>
           <li class="project item">
             <a href="#!">
@@ -117,6 +141,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 3</span>
+            </div>
           </li>
           <li class="project item">
             <a href="#!">
@@ -127,6 +154,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 4</span>
+            </div>
           </li>
           <li class="project item">
             <a href="#!">
@@ -137,6 +167,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 5</span>
+            </div>
           </li>
           <li class="project item">
             <a href="#!">
@@ -147,6 +180,9 @@
                 height="260"
               />
             </a>
+            <div class="project-name">
+              <span class="text-white">Project 6</span>
+            </div>
           </li>
         </ul>
       </div>
