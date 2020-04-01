@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/fontawesome.min.css" />
+    <link rel="stylesheet" href="../styles/brands.min.css" />
     <style>
       footer {
         background-color: white;
@@ -40,38 +42,57 @@
       footer .column.about p {
         color: var(--secondary-text-color);
         font-size: 1.5rem;
+        max-width: 27rem;
+        margin: 0 auto 1.5rem auto;
       }
       footer ul#social {
         display: flex;
       }
+      footer ul#social > li{
+        margin-right: 1rem;
+        border: 2px solid var(--secondary-color);
+        width: 3.7rem;
+        height: 3.7rem;
+        transition: all 0.3s;
+      }
       footer ul#social > li > a {
-        width: 4rem;
-        height: 4rem;
-        display: block;
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%; 
+      }
+      footer ul#social > li:hover{
+        border: 2px solid var(--primary-color);
+        background-color: var(--primary-color);
+      }
+      footer ul#social > li:hover > a i{
+        color: white;
       }
       footer section#copyright{
-        color: var(--secondary-text-color);
         text-align: center;
       }
 
       @media (min-width: 768px) {
         footer .row{
-            flex-direction: column;
-            text-align: center;
+          flex-direction: column;
+          text-align: center;
         }
       }
       @media (min-width: 992px) {
         footer .row{
-            flex-direction: row;
-            text-align: left;
+          flex-direction: row;
+          text-align: left;
         }
       }
       @media (min-width: 1200px) {
         footer .row{
-            flex-direction: row;
-            text-align: left;
+          flex-direction: row;
+          text-align: left;
         }
       }
+      
     </style>
     <title>Footer 1</title>
   </head>
@@ -80,7 +101,7 @@
       <section class="container">
         <div class="row">
           <div class="column">
-            <h2>Menu 1</h2>
+            <h2>Links</h2>
             <ul>
               <li><a href="#!">Home</a></li>
               <li><a href="#!">Features</a></li>
@@ -90,12 +111,10 @@
             </ul>
           </div>
           <div class="column">
-            <h2>Menu 2</h2>
+            <h2>Legal</h2>
             <ul>
               <li><a href="#!">Privacy Policy</a></li>
               <li><a href="#!">Terms</a></li>
-              <li><a href="#!">FAQ</a></li>
-              <li><a href="#!">Support</a></li>
             </ul>
           </div>
           <div class="column about">
@@ -109,14 +128,14 @@
           <div class="column">
             <h2>Follow Us</h2>
             <ul id="social">
-                <li><a href="#!"><img src="../icons/Facebook-02.svg" alt="Facebook"></a></li>
-                <li><a href="#!"><img src="../icons/Instagram-01.svg" alt="Instagram"></a></li>
-                <li><a href="#!"><img src="../icons/Twitter-01.svg" alt="Twitter"></a></li>
-                <li><a href="#!"><img src="../icons/Google-01.svg" alt="Google"></a></li>
+              <li><a href="#!"><i class="fab fa-facebook-f text-secondary"></a></i></li>
+              <li><a href="#!"><i class="fab fa-twitter text-secondary"></a></i></li>
+              <li><a href="#!"><i class="fab fa-google-plus-g text-secondary"></a></i></li>
+              <li><a href="#!"><i class="fab fa-pinterest-p text-secondary"></a></i></li>
             </ul>
           </div>
         </section>
-        <section id="copyright">
+        <section id="copyright" class="text-grey">
           <p>&copy; 2020 Devdevil, All Rights Reserved</p>
         </section>
       </div>
