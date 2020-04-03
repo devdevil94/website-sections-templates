@@ -4,129 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/fontawesome.min.css" />
+    <link rel="stylesheet" href="../styles/solid.min.css" />
     <title>Top Navigation 2</title>
     <style>
-      .nav {
-        height: 50px;
+      :root {
+        --navbar-height: 5rem;
+      }
+      body {
+        height: 100rem;
+      }
+      header {
+        position: fixed;
         width: 100%;
-        background-color: #4d4d4d;
+      }
+      .navbar {
+        height: var(--navbar-height);
+        width: 100%;
         position: relative;
+        display: flex;
+        justify-content: space-between;
       }
 
-      .nav > .nav-header {
+      .navbar > .nav-header {
         display: inline;
       }
 
-      .nav > .nav-header > .nav-title {
+      .navbar > .nav-header > .nav-title {
         display: inline-block;
         font-size: 22px;
-        color: #fff;
         padding: 1rem;
       }
 
-      .nav > .nav-btn {
+      .navbar > .nav-btn {
         display: none;
       }
-
-      .nav > .nav-links {
-        display: inline;
-        float: right;
-        font-size: 18px;
+      .navbar > .nav-btn:focus {
+        outline: none;
       }
 
-      .nav > .nav-links > a {
+      .navbar > .nav-links {
+        display: inline;
+        font-size: 1.8rem;
+      }
+
+      .navbar > .nav-links > a {
         display: inline-block;
         padding: 1.3rem 1rem;
         text-decoration: none;
-        color: #efefef;
       }
 
-      .nav > .nav-links > a:hover {
+      .navbar > .nav-links > a:hover {
         background-color: rgba(0, 0, 0, 0.3);
       }
 
-      .nav > #nav-check {
+      .navbar > #nav-checkbox {
         display: none;
       }
 
       @media screen and (max-width: 768px) {
-        .nav > .nav-btn {
+        .navbar > .nav-btn {
           display: inline-block;
           position: absolute;
           right: 0px;
           top: 0px;
+          cursor: pointer;
+          height: 100%;
         }
-        .nav > .nav-btn > label {
-          display: inline-block;
-          width: 50px;
-          height: 50px;
-          padding: 13px;
+        .navbar > .nav-btn > label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: var(--navbar-height);
+          height: var(--navbar-height);
+          padding: 1.3rem;
+          cursor: pointer;
+          text-align: center;
         }
-        .nav > .nav-btn > label:hover,
-        .nav #nav-check:checked ~ .nav-btn > label {
-          background-color: rgba(0, 0, 0, 0.3);
+        .navbar > .nav-btn > label > i {
+          font-size: 1.6rem;
         }
-        .nav > .nav-btn > label > span {
-          display: block;
-          width: 25px;
-          height: 10px;
-          border-top: 2px solid #eee;
-        }
-        .nav > .nav-links {
+        .navbar > .nav-links {
           position: absolute;
           display: block;
           width: 100%;
-          background-color: #333;
           height: 0px;
           transition: all 0.3s ease-in;
           overflow-y: hidden;
-          top: 50px;
+          top: var(--navbar-height);
           left: 0px;
         }
-        .nav > .nav-links > a {
+        .navbar > .nav-links > a {
           display: block;
           width: 100%;
+          text-align: center;
         }
-        .nav > #nav-check:not(:checked) ~ .nav-links {
+        .navbar > #nav-checkbox:not(:checked) ~ .nav-links {
           height: 0px;
         }
-        .nav > #nav-check:checked ~ .nav-links {
-          height: calc(100vh - 50px);
-          overflow-y: auto;
+        .navbar > #nav-checkbox:checked ~ .nav-links {
+          height: calc(100vh - var(--navbar-height));
         }
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <div class="nav-title">
-            JoGeek
+    <header class="bg-primary">
+      <div class="contianer">
+        <nav class="navbar bg-primary">
+          <input type="checkbox" id="nav-checkbox" />
+          <div class="nav-header">
+            <a href="#!" class="nav-title text-white">
+              Solaris
+            </a>
           </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+          <div class="nav-btn">
+            <label for="nav-checkbox">
+              <i class="fas fa-bars text-white"></i>
+            </label>
+          </div>
 
-        <div class="nav-links">
-          <a href="//github.io/jo_geek" target="_blank">Github</a>
-          <a href="http://stackoverflow.com/users/4084003/" target="_blank"
-            >Stackoverflow</a
-          >
-          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank"
-            >JsFiddle</a
-          >
-        </div>
+          <div class="nav-links bg-primary">
+            <a class="text-white" href="//github.io/jo_geek" target="_blank"
+              >Github</a
+            >
+            <a
+              class="text-white"
+              href="http://stackoverflow.com/users/4084003/"
+              target="_blank"
+              >Stackoverflow</a
+            >
+            <a
+              class="text-white"
+              href="https://in.linkedin.com/in/jonesvinothjoseph"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="text-white"
+              href="https://jsfiddle.net/user/jo_Geek/"
+              target="_blank"
+              >JsFiddle</a
+            >
+          </div>
+        </nav>
       </div>
     </header>
   </body>
