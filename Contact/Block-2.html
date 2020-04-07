@@ -10,22 +10,33 @@
       }
       .row {
         text-align: center;
-        display: flex;
-        justify-content: space-between;
-      }
-      .row p {
-        margin: 0;
-      }
-      .column {
-        max-width: 20rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
+      .column {
+        width: 20rem;
+        margin: 0 auto;
+      }
       .column p {
         font-size: 1.6rem;
+        margin: 0;
       }
       .column h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: 425px) {
+        .row {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 992px) {
+        .row {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
       }
     </style>
     <title>Contact 2</title>
@@ -35,20 +46,20 @@
       <div class="container">
         <div class="row">
           <div class="column">
-            <h1 class="uppercase">Address</h1>
+            <h1 class="uppercase text-white">Address</h1>
             <p class="text-white">2605 Scheuvront Drive. New York, NY</p>
           </div>
           <div class="column">
-            <h1 class="uppercase">Opening Hours</h1>
+            <h1 class="uppercase text-white">Opening Hours</h1>
             <p class="text-white">Mon-Sun<br />9am-10pm</p>
           </div>
           <div class="column">
-            <h1 class="uppercase">Phone</h1>
+            <h1 class="uppercase text-white">Phone</h1>
             <p class="text-white">+123 9876543<br />+166 9876789</p>
           </div>
           <div class="column">
-            <h1 class="uppercase">Email</h1>
-            <p class="text-white">info@canella.com</p>
+            <h1 class="uppercase text-white">Email</h1>
+            <p class="text-white">info@canella.com<br />reserve@canella.com</p>
           </div>
         </div>
       </div>
