@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="../styles/solid.min.css" />
     <title>Side Navigation 1</title>
     <style>
+      :root {
+        --top-navbar-height: 6rem;
+      }
+      body {
+        height: 100rem;
+      }
+      .navbar {
+        position: relative;
+      }
       .navbar__top {
-        height: 6rem;
+        height: var(--top-navbar-height);
         width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
       }
       .navbar__top .container {
         height: 100%;
@@ -22,9 +35,32 @@
       .navbar__socialToggle {
         font-size: 2rem;
         height: 100%;
-        width: 6rem;
+        width: var(--top-navbar-height);
       }
       .navbar__menuToggle {
+      }
+      .navbar__aside {
+        padding: 2rem 0;
+        width: 30rem;
+        height: 100vh;
+        position: fixed;
+        top: var(--top-navbar-height);
+        transform: translateX(-100%);
+        box-shadow: 0 0 15px rgba(110, 106, 104, 0.1);
+        z-index: 10;
+      }
+      .navbar__link a {
+        padding: 1rem;
+        width: 100%;
+        display: block;
+        transition: all 0.2s;
+        font-weight: bold;
+      }
+      .navbar__link a:hover {
+        color: var(--primary-color);
+      }
+      p {
+        padding: var(--top-navbar-height) 0;
       }
     </style>
   </head>
@@ -36,15 +72,38 @@
             <button class="navbar__menuToggle text-dark">
               <i class="fas fa-bars"></i>
             </button>
-            <a href="#!" class="navbar__">LOGO</a>
+            <a href="#!" class="navbar__brand">LOGO</a>
             <button class="navbar__socialToggle text-dark">
               <i class="fas fa-ellipsis-h"></i>
             </button>
           </div>
         </div>
+        <ul class="navbar__aside bg-white">
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Home</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Menu</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">About Us</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Contacts</a>
+          </li>
+        </ul>
       </nav>
     </header>
-
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dicta
+      modi quia perspiciatis neque aperiam excepturi iusto laboriosam dolorum
+      nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      culpa quaerat placeat quisquam obcaecati corporis adipisci provident
+      ducimus! Iste suscipit cupiditate nam illo harum quidem impedit, atque
+      possimus tenetur eligendi saepe cum, id mollitia consectetur beatae
+      excepturi dignissimos similique? Soluta!
+    </p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script></script>
   </body>
 </html>
