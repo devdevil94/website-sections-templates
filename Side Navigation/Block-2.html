@@ -147,6 +147,41 @@
       .navbar__link a:hover {
         color: var(--primary-color);
       }
+
+      @media (min-width: 768px) {
+        .navbar__menuBox {
+          width: 135px;
+        }
+        .navbar__socialBox {
+          width: 135px;
+          position: static;
+        }
+        .navbar__socialToggle {
+          display: none;
+        }
+        .navbar__socialList {
+          position: static;
+          width: auto;
+          background-color: white;
+          box-shadow: none;
+          transform: none;
+          opacity: 1;
+        }
+        .navbar__socialItem {
+          margin-right: 0.5rem;
+        }
+        .navbar__socialItem a {
+          width: 3rem;
+          height: 3rem;
+          font-size: 1.4rem;
+          color: var(--secondary-color);
+          border: 2px solid var(--secondary-color);
+        }
+        .navbar__socialItem a:hover {
+          background-color: var(--secondary-color);
+          color: white;
+        }
+      }
     </style>
     <title>Side Navigation 2</title>
   </head>
