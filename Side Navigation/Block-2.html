@@ -7,6 +7,147 @@
     <link rel="stylesheet" href="../styles/fontawesome.min.css" />
     <link rel="stylesheet" href="../styles/solid.min.css" />
     <link rel="stylesheet" href="../styles/brands.min.css" />
+
+    <style>
+      :root {
+        --top-navbar-height: 8rem;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        width: 100%;
+        box-shadow: 0 14px 14px rgba(112, 112, 112, 0.1);
+      }
+
+      .navbar__top {
+        height: var(--top-navbar-height);
+        width: 100%;
+        z-index: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar .container {
+        position: relative;
+        height: 100%;
+      }
+
+      .navbar__menuToggle,
+      .navbar__socialToggle {
+        font-size: 2rem;
+        height: 5rem;
+        width: 5rem;
+        transition: all 0.3s;
+      }
+      .navbar__menuToggle:hover,
+      .navbar__socialToggle:hover {
+        color: var(--primary-color);
+      }
+      .navbar__menuToggle:focus,
+      .navbar__socialToggle:focus {
+        outline: none;
+      }
+      .navbar__menuToggle.active,
+      .navbar__socialToggle.active {
+        color: var(--primary-color);
+      }
+
+      .navbar__socialBox,
+      .navbar__menuBox {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 8rem;
+        display: flex;
+        align-items: center;
+      }
+      .navbar__socialToggle {
+        position: absolute;
+        right: 0;
+      }
+
+      .navbar__socialList {
+        display: flex;
+        position: fixed;
+        top: var(--top-navbar-height);
+        right: 0;
+        width: 100%;
+        justify-content: center;
+        padding: 2rem 0;
+        box-shadow: 0 14px 14px rgba(112, 112, 112, 0.1);
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      .navbar__socialList.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .navbar__socialItem {
+        margin-right: 1rem;
+      }
+      .navbar__socialItem:last-child {
+        margin: 0;
+      }
+      .navbar__socialItem a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        transition: all 0.3s;
+      }
+      .navbar__socialItem a:hover {
+        background-color: white;
+        color: var(--primary-color);
+      }
+
+      .navbar__brand {
+        font-family: "Great Vibes", cursive;
+        font-weight: bold;
+        font-size: 4rem;
+        display: inline-block;
+      }
+
+      .navbar__aside {
+        padding: 2rem 0;
+        width: 25rem;
+        height: 100vh;
+        position: fixed;
+        top: var(--top-navbar-height);
+        transform: translateX(-100%);
+        opacity: 0;
+        box-shadow: 0 25px 10px rgba(0, 0, 0, 0.15);
+        z-index: 0;
+        transition: all 0.3s;
+        background-color: rgb(255, 243, 227);
+      }
+      .navbar__aside.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .navbar__link a {
+        padding: 1rem 2rem;
+        width: 100%;
+        display: block;
+        transition: all 0.2s;
+        font-weight: bold;
+        font-family: "Oswald";
+        letter-spacing: 1px;
+      }
+      .navbar__link a:hover {
+        color: var(--primary-color);
+      }
+    </style>
     <title>Side Navigation 2</title>
   </head>
   <body>
